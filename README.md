@@ -12,7 +12,7 @@ Welcome to the ProgIIIPrak repository! This project is part of the Programming I
 
 ## Description
 
-In this project, I aimed to crate a collection of the practice tasks.
+In this project, I aimed to crate a collection of the practice tasks. I used Intellij for this project. If needed it can be ported!
 
 ## Installation
 
