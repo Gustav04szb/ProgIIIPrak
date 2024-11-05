@@ -59,11 +59,11 @@
 
 
 > [!NOTE] 
-> [Probiere die Lösung mit der Klasse boolAuswerten](../src/boolAuswerten.java)
+> [Probiere die Lösung mit der Klasse boolAuswerten](../src/progPrakBeispiele.java)
 
 #### *Verwendung in der main:*
 ```java
- new boolAuswerten().U2A6();
+ new progPrakBeispiele().boolAuswerten();
  ```
 
 ### (7) Lösen Sie die folgenden Aufgaben im Hexadezimalsystem und wandeln Sie anschließend das Ergebnis in das Dezimalsystem um
