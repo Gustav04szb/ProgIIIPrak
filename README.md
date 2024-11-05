@@ -1,3 +1,6 @@
+> [!WARNING]
+> **Diest ist ein Intellij Projekt!** | *Es ist zwar ein Eclipse-Export enthalten, dieser ist jedoch noch nicht getestet!*
+
 ## Aufgaben
 > [01 Aufgabensammelung ](PrakUnterlagen/01%20Aufgabensammlung.pdf)
 >> [01 Loesung ](PrakLoesungen/01%20Loesung.md)
