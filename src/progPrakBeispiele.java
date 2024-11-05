@@ -48,6 +48,49 @@ public class progPrakBeispiele {
        return input * fakultaet(input - 1);
 
    }
+
+   public static int summenForLoopA(){
+        int sum = 0;
+        for(int i = 0; 28 > i; i++){
+            sum += (i - 1) * (i - 1);
+        }
+        return sum;
+   }
+    public static int summenForLoopB(){
+        int sum = 0;
+        for(int i = 0; 100 > i; i++){
+            sum += (i * (i + 1)) / 2;
+        }
+        return sum;
+    }
+    public static int summenForLoopC(){
+        int sum = 0;
+        for(int i = 1; 25 > i; i++){
+            sum += (i + 1) / i;
+        }
+        return sum;
+    }
+
+    public void forInWhile1(){
+        int x =7;
+        while(x<12){
+            System.out.println(x);
+            ++x;
+        }
+    }
+    public void forInWhile2(){
+        int x = 10, y = 0;
+        while(x>y) {
+            System.out.println("x = " + x + ", y = " + y);
+            --x;
+        }
+    }
+    public void whileInFor(){
+        for (int i = 1024; i > 2; i /= 2) {
+            System.out.println(i);
+        }
+    }
+
     /* 05 Loesungen */
     public void readFileFromArgs(String[] args) {
         try {
