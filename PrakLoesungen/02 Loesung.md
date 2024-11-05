@@ -59,11 +59,15 @@
 
 
 > [!NOTE] 
-> [Probiere die Lösung mit der Klasse boolAuswerten](../src/progPrakBeispiele.java#L6-L14)
+> [Klicke hier um den code in der Klasse progPrakBeispiele zu sehen](../src/progPrakBeispiele.java#L6-L14)
 
 #### *Verwendung in der main:*
 ```java
- new progPrakBeispiele().boolAuswerten();
+public class Main {
+    public static void main(String[] args) {
+        new progPrakBeispiele().boolAuswerten();
+    }
+}
  ```
 
 ### (7) Lösen Sie die folgenden Aufgaben im Hexadezimalsystem und wandeln Sie anschließend das Ergebnis in das Dezimalsystem um
