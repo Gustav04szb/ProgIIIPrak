@@ -13,6 +13,41 @@ public class progPrakBeispiele {
         System.out.println("L2 "+ c +", L3 " + d + ", L4 " + e + ", L5 " + f + ", L6 " + g);
     }
 
+    /* 03 Loesungen */
+    public int formelf1x(int input){
+        return input;
+    }
+    public float formelf1x(float input){
+        return input;
+    }
+
+    public int formelf2x(int input){
+        return (input * input) / 2 + (17 *2);
+    }
+    public float formelf2x(float input){
+        return  (input * input) / 2 + (17 *2);
+    }
+
+    public float formelf3x(float input){
+        return (float) (Math.pow(input,3) - 14) / 2;
+    }
+    public double formelf3x(double input){
+        return (Math.pow(input,3) - 14) / 2;
+    }
+
+   public int fakultaet(int input){
+       if (input < 0) {
+           throw new IllegalArgumentException("Die Zahl muss nicht negativ sein.");
+       }
+       if(input > 19){
+           throw new IllegalArgumentException("Die Zahl darf nicht größer als 19 sein.");
+       }
+       if (input == 0 || input == 1) {
+           return 1; // Basisfall: 0! und 1! sind 1
+       }
+       return input * fakultaet(input - 1);
+
+   }
     /* 05 Loesungen */
     public void readFileFromArgs(String[] args) {
         try {
