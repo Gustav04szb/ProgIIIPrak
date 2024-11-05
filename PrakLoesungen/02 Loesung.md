@@ -59,7 +59,7 @@
 
 
 > [!NOTE] 
-> [Klicke hier um den code in der Klasse progPrakBeispiele zu sehen](../src/progPrakBeispiele.java#L6-L14)
+> [Klicke hier um den code in der Klasse progPrakBeispiele zu sehen](../src/progPrakBeispiele.java#L15-L35)
 
 #### *Verwendung in der main:*
 ```java
