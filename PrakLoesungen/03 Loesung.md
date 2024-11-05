@@ -98,22 +98,10 @@ public class Main {
 > [Klicke hier um den code in der Klasse progPrakBeispiele zu sehen](../src/progPrakBeispiele.java#L52-L72)
 
 ### (7) Überführen Sie die folgenden Schleifen in for- bzw. while-Schleifen
-```java
-for (int x=7; x<12; x++)
-    <Anweisung>
+| For-Schleife                                                                   | For-Schleife2                               | While-Schleife                                                 |
+|--------------------------------------------------------------------------------|---------------------------------------------|----------------------------------------------------------------|
+| for (int x=7; x<12; x++) for (int y=0; x=10; x>y; y++, x--) <br/>`<Anweisung>` | for (int x=7; x<12; x++) <br/>`<Anweisung>` | int a = 1024;<br>while (a>2) { <br/> <Anweisung> a=a/2; <br/>} |
 
-```
-```java
-for (int y=0; x=10; x>y; y++, x--) 
-    <Anweisung>
-```
-```java
-int a = 1024;
-while (a>2) {
-    <Anweisung>
-    a=a/2;
-}
-```
 ```java
 public class Main {
     public static void main(String[] args) {
