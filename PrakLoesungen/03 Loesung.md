@@ -26,15 +26,15 @@ END     Eierkuchen
 > `while(true)` & Endlose Rekursion
 
 ```mermaid
-graph TD;
-    A[Start] --> B{Bedingung: true}
-    B -->|Ja| C[Aktion: Wiederhole]
-    C --> B
-    
-graph TD;
-    A[Start] --> B[Aufruf: endloseRekursion()]
-    B --> A
-
+graph TB
+  StartWhile[Start] --> NodeWhile[Überprüfen der Bedingung]
+  NodeWhile -->|true| DoAction[Aktion: Wiederhole]
+  DoAction --> NodeWhile
+```
+```mermaid
+graph TB
+  StartRecursion[Start] --> CallRecursion[Aufruf: endloseRekursion()]
+  CallRecursion --> CallRecursion
 ```
 ### (3) Gehen Sie die einzelnen Schritte aus Abschnitt 2.3.2 durch und bringen Sie das Programm ProgrammEins zum Laufen:
 ```java
