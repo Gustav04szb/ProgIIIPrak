@@ -66,6 +66,13 @@
  new boolAuswerten().U2A6();
  ```
 
+### (7) Lösen Sie die folgenden Aufgaben im Hexadezimalsystem und wandeln Sie anschließend das Ergebnis in das Dezimalsystem um
+> a) 2F + A2 &rarr; 47 + 162 &rarr; **209**\
+> b) 07 + FF &rarr; 7 + 255 &rarr; **262**\
+> c) FE - A4 &rarr; 254 - 164 &rarr; **90**
 
-
+### (8) Wandeln Sie die folgenden Binärdarstellungen in Dezimalzahlen um (es handelt sich dabei um die Zweier komplement-Darstellung mit 8 Bit):
+> a) 10011011 &rarr; Invertieren + 1 &rarr; 01100101 &rarr;  $`1* 2^6 + 1 * 2^5  + 1 * 2^2 + 1 * 2^0`$ &rarr; **-101**\
+> b) 01100100 &rarr; $` 1* 2^6 + 1 * 2^5  + 1 * 2^2 `$ &rarr; **100**\
+> c) 11001101 &rarr; Invertieren + 1 &rarr; 00110011 &rarr; $` 1* 2^5 + 1* 2^4 + 1 * 2^1  + 1 * 2^0 `$ &rarr; **-51**
 
