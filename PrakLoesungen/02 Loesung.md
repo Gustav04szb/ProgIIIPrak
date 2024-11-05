@@ -42,5 +42,30 @@
 > e) Fläche eines Fußballfeldes ($cm^2$)   &rarr; `int`\
 > f) Kreiszahl $\pi$                    &rarr; `final double`
 
-### 
+### (1) Werten Sie die folgenden Programmzeilen aus und geben Sie die Werte von c, d, e, f und g an
+```java
+    boolean a = true, b = false, c, d, e, f, g;  
+    c = a ^ b;
+    d = !a || b;
+    e = (d && !c) || !a;
+    f = ((d == e) || (d != e)) == true;
+    g = 5==7;
+```
+> L2 &rarr; `true`\
+> L3 &rarr; `false`\
+> L4 &rarr; `false`\
+> L5 &rarr; `true`\
+> L6 &rarr; `false`
+
+
+> [!NOTE] 
+> [Probiere die Lösung mit der Klasse boolAuswerten](../src/boolAuswerten.java)
+
+#### *Verwendung in der main:*
+```java
+ new boolAuswerten().U2A6();
+ ```
+
+
+
 
