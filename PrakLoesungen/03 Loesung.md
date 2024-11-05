@@ -10,7 +10,7 @@
 > Wiederverwendbarkeit / bessere Wartbarkeit
 ## 03–Aufgabensammlung
 ### (1) Versuchen Sie ihr Lieblingsrezept in Pseudocode zu notieren und anschließend in ein Aktivitätsdiagramm zu übertragen.
-```css
+```
 BEGIN   Eierkuchen
         EIER in eine SCHÜSSEL geben
         RÜHREN (EIER)
@@ -34,7 +34,8 @@ graph TB
 ```mermaid
 graph TB
   StartRecursion[Start] --> CallRecursion[Aufruf: endloseRekursion()]
-  CallRecursion --> CallRecursion
+  CallRecursion --> CallRecursion2
+  CallRecursion2 --> CallRecursion
 ```
 ### (3) Gehen Sie die einzelnen Schritte aus Abschnitt 2.3.2 durch und bringen Sie das Programm ProgrammEins zum Laufen:
 ```java
