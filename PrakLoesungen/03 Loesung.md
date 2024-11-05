@@ -67,7 +67,7 @@ public class Main {
 ```java
 public class Main {
     public static void main(String[] args) {
-        progPrakBeispiele bsp = new progPrakBeispiele()
+        progPrakBeispiele bsp = new progPrakBeispiele();
         int input = 15, input2 = 20;
         int erg = bsp.fakultaet(input);
         System.out.println(erg);
@@ -84,3 +84,15 @@ public class Main {
 > a) $` \sum_{i=0}^{28}(i-1)^2 `$\
 > b) $` \sum_{i=0}^{100}\frac{i*(i+1)}{2} `$\
 > c) $` \sum_{i=1}^{25}\frac{i+1}{i} `$
+```java
+public class Main {
+    public static void main(String[] args) {
+        progPrakBeispiele bsp = new progPrakBeispiele();
+        System.out.println(bsp.summenForLoopA());
+        System.out.println(bsp.summenForLoopB());
+        System.out.println(bsp.summenForLoopC());
+    }
+}
+```
+> [!NOTE]
+> [Klicke hier um den code in der Klasse progPrakBeispiele zu sehen](../src/progPrakBeispiele.java#L52-L72)
