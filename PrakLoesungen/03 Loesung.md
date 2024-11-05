@@ -114,5 +114,15 @@ while (a>2) {
     a=a/2;
 }
 ```
+```java
+public class Main {
+    public static void main(String[] args) {
+        progPrakBeispiele bsp = new progPrakBeispiele();
+        bsp.forInWhile1();
+        bsp.forInWhile2();
+        bsp.whileInFor();
+    }
+}
+```
 > [!NOTE]
 > [Klicke hier um den code in der Klasse progPrakBeispiele zu sehen](../src/progPrakBeispiele.java#L74-L92)
