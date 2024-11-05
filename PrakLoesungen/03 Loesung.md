@@ -44,3 +44,43 @@ graph TB
     }
 }
  ```
+
+### (4) Geben Sie ein Programm in Java an, das folgende Formeln in jeweils separaten Funktionen berechnet
+> a) $`f1(x) = x`$ \
+> b) $`f2(x) = \frac{x^2}{2}+17*2 `$ \
+> c) $`f2(x) = \frac{(x −1)^3−14)}{2}`$
+```java
+public class Main {
+    public static void main(String[] args) {
+        progPrakBeispiele bsp = new progPrakBeispiele();
+        bsp.formelf1x(5); // implementiert für int & flaot 
+        bsp.formelf2x(5); // implementiert für int & flaot 
+        bsp.formelf3x(5); // implementiert für int & flaot 
+    }
+}
+```
+> [!NOTE]
+> [Klicke hier um den code in der Klasse progPrakBeispiele zu sehen](../src/progPrakBeispiele.java#L17-L36)
+
+### (5) Schreiben Sie ein Programm, das für i=1,2,...,20 die Fakultätsfunktion berechnet und die Funktionswerte zeilenweise ausgibt. Die Fakultätsfunktion ist wie folgt definiert
+> $` fakultaet(n) = 1 * 2 \dots n =  \prod_{i=1}^{n} n! `$
+```java
+public class Main {
+    public static void main(String[] args) {
+        progPrakBeispiele bsp = new progPrakBeispiele()
+        int input = 15, input2 = 20;
+        int erg = bsp.fakultaet(input);
+        System.out.println(erg);
+
+        erg = bsp.fakultaet(input2);  // Überschreitet Integer.MAX_VALUE // int - 32 Bit(4Bytes)
+        System.out.println(erg);
+    }
+}
+```
+> [!NOTE]
+> [Klicke hier um den code in der Klasse progPrakBeispiele zu sehen](../src/progPrakBeispiele.java#L38-L50)
+
+### (6) Geben Sie für die folgenden Summen entsprechende for-Schleifen an:
+> a) $` \sum_{i=0}^{28}(i-1)^2 `$\
+> b) $` \sum_{i=0}^{100}\frac{i*(i+1)}{2} `$\
+> c) $` \sum_{i=1}^{25}\frac{i+1}{i} `$
