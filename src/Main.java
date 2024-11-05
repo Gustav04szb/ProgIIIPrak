@@ -1,13 +1,26 @@
 public class Main {
     public static void main(String[] args) {
-        printArgs args1 = new printArgs(); // Zugriff auf die Klasse Aufgabe05
-        args1.Arguments(args); // Abrufen der funktion Arguments aus der klasse Aufgabe05
+        progPrakBeispiele bsp = new progPrakBeispiele();
+        /* 02 */
+//        bsp.boolAuswerten();
 
+        /* 03 */
+//        int aIntNumber = 5;
+//        float aFloatNumber = 2.8f;
+//
+//        System.out.println(bsp.formelf1x(aIntNumber));
+//        System.out.println(bsp.formelf1x(aFloatNumber));
+//        System.out.println(bsp.formelf2x(aIntNumber));
+//        System.out.println(bsp.formelf2x(aFloatNumber));
+//        System.out.println(bsp.formelf3x(aIntNumber));
+//        System.out.println(bsp.formelf3x(aFloatNumber));
 
-        myWriter myWriter = new myWriter();
-        myWriter.writer(args);
+        System.out.println(new progPrakBeispiele().fakultaet(15));
 
-        myScanner scanner = new myScanner(); // Legt scanner aus der Klasse myScanner an
-        scanner.scan(args); //Ruft den scanner mit arguments auf.
+        /* 05 */
+//        bsp.readFileFromArgs(args);
+//        bsp.writeToFileFromArgs(args);
+//        bsp.printArgsToConsol(args);
+
     }
 }
