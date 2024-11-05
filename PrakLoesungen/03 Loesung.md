@@ -33,7 +33,7 @@ graph TB
 ```
 ```mermaid
 graph TB
-  StartRecursion[Start] --> CallRecursion[Aufruf: `endloseRekursion()`]
+  StartRecursion[Start] --> CallRecursion[Aufruf: endloseRekursion]
   CallRecursion --> CallRecursion
 ```
 ### (3) Gehen Sie die einzelnen Schritte aus Abschnitt 2.3.2 durch und bringen Sie das Programm ProgrammEins zum Laufen:
