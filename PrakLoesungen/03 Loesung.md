@@ -33,8 +33,8 @@ graph TB
 ```
 ```mermaid
 graph TB
-  StartRecursion[Start] --> CallRecursion[Aufruf: endloseRekursion]
-  CallRecursion --> CallRecursion
+  StartRecursion[Start] --> CallRecursion[endloseRekursion]
+  CallRecursion --> |Selbstaufruf|CallRecursion
 ```
 ### (3) Gehen Sie die einzelnen Schritte aus Abschnitt 2.3.2 durch und bringen Sie das Programm ProgrammEins zum Laufen:
 ```java
