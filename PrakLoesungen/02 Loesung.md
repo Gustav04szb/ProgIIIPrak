@@ -56,12 +56,6 @@
 > L4 &rarr; `false`\
 > L5 &rarr; `true`\
 > L6 &rarr; `false`
-
-
-> [!NOTE] 
-> [Klicke hier um den code in der Klasse progPrakBeispiele zu sehen](../src/progPrakBeispiele.java#L5-L14)
-
-#### *Verwendung in der main:*
 ```java
 public class Main {
     public static void main(String[] args) {
@@ -69,6 +63,8 @@ public class Main {
     }
 }
  ```
+> [!NOTE]
+> [Klicke hier um den code in der Klasse progPrakBeispiele zu sehen](../src/progPrakBeispiele.java#L5-L14)
 
 ### (7) Lösen Sie die folgenden Aufgaben im Hexadezimalsystem und wandeln Sie anschließend das Ergebnis in das Dezimalsystem um
 > a) 2F + A2 &rarr; 47 + 162 &rarr; **209**\
