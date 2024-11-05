@@ -12,7 +12,6 @@
 ### (5) Was bedeutet der Begriff Lambda-Ausdruck in Java?
 > Eine kürzere Form anonymer Funktionen &rarr; kompaktere Syntax.
 
-
 ## 01 – Aufgabensammlung
 ### (1) Machen Sie sich mit der Installation von Java vertraut und installieren Sie die aktuelle Version des Java JDKauf Ihrem Rechner [1]. Installieren Sie einen einfachen Editor (z.B. Notepad++) mit Syntaxhighlighting für die ersten Schritte mit Java [2]. Alternativ können Sie die ersten Gehversuche auch ohne Installation über einen Online-Compiler starten [3].
 ### (2) Später werden wir auf die Javaprogramme in einer professionellen Entwicklungsumgebung (IDE) erstellen und dafür Eclipse [4] nutzen. Auch hier können Sie sich bereits mit Eclipse auseinandersetzen und Ihren  Rechner dafür vorbereiten.
