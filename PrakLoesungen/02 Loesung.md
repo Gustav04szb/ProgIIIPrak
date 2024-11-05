@@ -59,7 +59,7 @@
 
 
 > [!NOTE] 
-> [Probiere die Lösung mit der Klasse boolAuswerten](../src/progPrakBeispiele.java#L6)
+> [Probiere die Lösung mit der Klasse boolAuswerten](../src/progPrakBeispiele.java#L6-L14)
 
 #### *Verwendung in der main:*
 ```java
