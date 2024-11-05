@@ -15,8 +15,15 @@ public class Main {
 //        System.out.println(bsp.formelf3x(aIntNumber));
 //        System.out.println(bsp.formelf3x(aFloatNumber));
 
-        System.out.println(new progPrakBeispiele().fakultaet(15));
+//        System.out.println( progPrakBeispiele().fakultaet(15));
 
+//        System.out.println(progPrakBeispiele.summenForLoopA());
+//        System.out.println(progPrakBeispiele.summenForLoopB());
+//        System.out.println(progPrakBeispiele.summenForLoopC());
+
+//        bsp.forInWhile1();
+//        bsp.forInWhile2();
+//        bsp.whileInFor();
         /* 05 */
 //        bsp.readFileFromArgs(args);
 //        bsp.writeToFileFromArgs(args);
