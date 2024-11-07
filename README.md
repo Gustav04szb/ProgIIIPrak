@@ -6,9 +6,9 @@
 **Dieses Projekt enthält Antworten zu den Theoriefragen der Aufgabensammlungen sowie Code-Beispiele.**
 
 ## Projektstruktur
-* **PrakLoesungen** &rarr; Hier findest du die Lösungen zu den jeweiligen Aufgabensammlungen.
-* **PrakUnterlagen** &rarr; Hier befinden sich die Aufgabensammlungen im PDF-Format.
-* **src** &rarr; Hier liegt die `Main`-Klasse sowie die Klassen für die Beispielaufgaben.
+* **[PrakLoesungen](PrakLoesungen/)** &rarr; Hier findest du die Lösungen zu den jeweiligen Aufgabensammlungen.
+* **[PrakUnterlagen](PrakUnterlagen)** &rarr; Hier befinden sich die Aufgabensammlungen im PDF-Format.
+* **[src](src/)** &rarr; Hier liegt die `Main`-Klasse sowie die Klassen für die Beispielaufgaben.
 
 ## Aufgaben
 > * [01 Aufgabensammlung](PrakUnterlagen/01%20Aufgabensammlung.pdf) &rarr; [01 Lösung](PrakLoesungen/01%20Loesung.md)
