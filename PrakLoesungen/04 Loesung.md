@@ -27,3 +27,10 @@
 ### (1) Verbessern Sie durch Umstrukturierung und Auslagerung von Programmteilen in Funktionen die Eigenschaften Übersichtlichkeit, Erweiterbarkeit und Wartbarkeit des Programms Javagotchi
 > [!NOTE]
 > [Hier findest du das Javagotich mit einer verbesserten Funktion](../src/JavaGotchi.java)
+```java
+public class Main {
+    public static void main(String[] args) {
+        new JavaGotchi().Einschalten();
+    }
+}
+```
