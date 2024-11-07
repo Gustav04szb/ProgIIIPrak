@@ -24,6 +24,8 @@ public class Main {
 //        bsp.forInWhile1();
 //        bsp.forInWhile2();
 //        bsp.whileInFor();
+//
+//        bsp.LongToFloatCastin();
         /* 05 */
 //        bsp.readFileFromArgs(args);
 //        bsp.writeToFileFromArgs(args);
