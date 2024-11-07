@@ -144,6 +144,7 @@ public class progPrakBeispiele {
         if (args.length == 0) {
             System.out.println("No arguments given");
         }
+        System.out.println("Arguments: " + args.length);
         for(int i = 0; i < args.length; i++) {
             System.out.println("Eingabe "+ i+1 + ": >" + args[i]);
         }
