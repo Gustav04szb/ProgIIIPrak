@@ -14,6 +14,7 @@
 > * [01 Aufgabensammlung](PrakUnterlagen/01%20Aufgabensammlung.pdf) &rarr; [01 Lösung](PrakLoesungen/01%20Loesung.md)
 > * [02 Aufgabensammlung](PrakUnterlagen/02%20Aufgabensammlung.pdf) &rarr; [02 Lösung](PrakLoesungen/02%20Loesung.md)
 > * [03 Aufgabensammlung](PrakUnterlagen/03%20Aufgabensammlung.pdf) &rarr; [03 Lösung](PrakLoesungen/03%20Loesung.md)
+> * [04 Aufgabensammlung](PrakUnterlagen/04%20Aufgabensammlung.pdf) &rarr; [04 Lösung](PrakLoesungen/04%20Loesung.md)
 
 ## Beiträge
 Wenn du zu diesem Projekt beitragen möchtest:
