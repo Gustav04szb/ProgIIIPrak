@@ -1,6 +1,6 @@
 > [!IMPORTANT]
 > Das Projekt wird in **Intellij** Entwickelt.\
-> "Ein Eclipse-Export ist enthalten, jedoch kann es erforderlich sein, die Java-Version im Projekt manuell zu ändern!
+> Ein Eclipse-Export ist enthalten, jedoch kann es erforderlich sein, die Java-Version im Projekt manuell zu ändern!
 
 ## Aufgaben
 > [01 Aufgabensammelung ](PrakUnterlagen/01%20Aufgabensammlung.pdf)
