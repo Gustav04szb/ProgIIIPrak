@@ -1,5 +1,6 @@
-> [!WARNING]
-> **Diest ist ein Intellij Projekt!** | *Es ist zwar ein Eclipse-Export enthalten, dieser ist jedoch noch nicht getestet!*
+> [!IMPORTANT]
+> Das Projekt wird in **Intellij** Entwickelt.\
+> "Ein Eclipse-Export ist enthalten, jedoch kann es erforderlich sein, die Java-Version im Projekt manuell zu ändern!
 
 ## Aufgaben
 > [01 Aufgabensammelung ](PrakUnterlagen/01%20Aufgabensammlung.pdf)
