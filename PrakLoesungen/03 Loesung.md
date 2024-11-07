@@ -113,4 +113,31 @@ public class Main {
 }
 ```
 > [!NOTE]
-> [Klicke hier um den code in der Klasse progPrakBeispiele zu sehen](../src/progPrakBeispiele.java#L74-L92)
+> [Klicke hier um den code in der Klasse progPrakBeispele zu sehen](../src/progPrakBeispiele.java#L74-L92)
+
+### (8) In Abschnitt 1.7.2 wurden Typumwandlungen mittels Casten vorgestellt. Überprüfen Sie, ob der größte darstellbare Wert für einen long in einen float passt (kleiner Hinweis: der größte darstellbare long ist Long.MAX_VALUE), indem Sie zunächst den Inhalt des long in den float speichern, zurückcasten und beide, den Startwert und den neuen Wert vergleichen.
+```java
+public class Main {
+    public static void main(String[] args) {
+        progPrakBeispiele bsp = new progPrakBeispiele();
+        bsp.LongToFloatCastin();
+    }
+}
+```
+> [!NOTE]
+> [Klicke hier um den code in der Klasse progPrakBeispiele zu sehen](../src/progPrakBeispiele.java#L94-L107)
+
+### (9) Erklären Sie warum Integer.MIN_VALUE-1 zu einer positiven Zahl führt.
+> Der Ausdruck `Integer.MIN_VALUE - 1` führt in Java zu `Integer.MAX_VALUE`, da die Subtraktion zu einem Überlauf im Zweierkomplement führt. Da Java keinen größeren Speicherplatz für `int` reserviert, „springt“ das Ergebnis bei einem Überlauf von der kleinsten negativen zur größten positiven Zahl.
+
+### (10) Welches Ergebnis liefern die beiden Programmzeilen c = c++; und c = ++c; und warum?
+> `c = c++;` lässt den Wert von c unverändert.\
+> `c = ++c;` erhöht den Wert von c um 1.
+```java
+public class Main {
+    public static void main(String[] args) {
+        int c = 10; c = c++; System.out.print(c);
+        int d = 10; d = ++d; System.out.print(d);
+    }
+}
+```
