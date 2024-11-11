@@ -46,16 +46,21 @@ public class JavaGotchi {
             }
         }
     }
+    private static void warten(){
+        try {
+            Thread.sleep(LOOP_DELAY_MS);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
     public void Einschalten(){
         while(spielLaeuft){
             aktuellerZustand();
             aktualisiereZustand();
             steigereHunger();
-            try {
-                Thread.sleep(LOOP_DELAY_MS);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
+            warten();
         }
     }
 }
+
+
