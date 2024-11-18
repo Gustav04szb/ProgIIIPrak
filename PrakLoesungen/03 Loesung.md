@@ -60,7 +60,7 @@ public class L3Formeln {
 }
 ```
 > [!NOTE]
-> [Klicke hier um den code in der Klasse L3JavaCode.L3Formeln zu sehen](../src/L3JavaCode/L3Formeln.java)
+> [Klicke hier um den code in der Klasse L3Formeln zu sehen](../src/L3JavaCode/L3Formeln.java)
 
 ### (5) Schreiben Sie ein Programm, das für i=1,2,...,20 die Fakultätsfunktion berechnet und die Funktionswerte zeilenweise ausgibt. Die Fakultätsfunktion ist wie folgt definiert
 > $` fakultaet(n) = 1 * 2 \dots n =  \prod_{i=1}^{n} n! `$
@@ -86,7 +86,7 @@ public class L3Fak {
 }
 ```
 > [!NOTE]
-> [Klicke hier um den code in der Klasse L3JavaCode.L3Fak zu sehen](../src/L3JavaCode/L3Fak.java)
+> [Klicke hier um den code in der Klasse L3Fak zu sehen](../src/L3JavaCode/L3Fak.java)
 
 ### (6) Geben Sie für die folgenden Summen entsprechende for-Schleifen an:
 > a) $` \sum_{i=0}^{28}(i-1)^2 `$\
@@ -122,7 +122,7 @@ public class L3Loops {
 }
 ```
 > [!NOTE]
-> [Klicke hier um den code in der Klasse progPrakBeispele zu sehen](../src/L3JavaCode/L3ForWhile.java)
+> [Klicke hier um den code in der Klasse L3ForWhile zu sehen](../src/L3JavaCode/L3ForWhile.java)
 
 ### (8) In Abschnitt 1.7.2 wurden Typumwandlungen mittels Casten vorgestellt. Überprüfen Sie, ob der größte darstellbare Wert für einen long in einen float passt (kleiner Hinweis: der größte darstellbare long ist Long.MAX_VALUE), indem Sie zunächst den Inhalt des long in den float speichern, zurückcasten und beide, den Startwert und den neuen Wert vergleichen.
 ```java
@@ -148,7 +148,7 @@ public class L3LongToFloat {
 }
 ```
 > [!NOTE]
-> [Klicke hier um den code in der Klasse progPrakBeispiele zu sehen](../src/L3JavaCode/L3LongToFloat.java)
+> [Klicke hier um den code in der Klasse L3LongToFloat zu sehen](../src/L3JavaCode/L3LongToFloat.java)
 
 ### (9) Erklären Sie warum Integer.MIN_VALUE-1 zu einer positiven Zahl führt.
 > Der Ausdruck `Integer.MIN_VALUE - 1` führt in Java zu `Integer.MAX_VALUE`, da die Subtraktion zu einem Überlauf im Zweierkomplement führt. Da Java keinen größeren Speicherplatz für `int` reserviert, „springt“ das Ergebnis bei einem Überlauf von der kleinsten negativen zur größten positiven Zahl.
