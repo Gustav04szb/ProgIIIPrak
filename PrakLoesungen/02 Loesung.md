@@ -57,14 +57,14 @@
 > L5 &rarr; `true`\
 > L6 &rarr; `false`
 ```java
-public class Main {
+public class L2JavaCode.L2BoolAuswerten {
     public static void main(String[] args) {
-        new progPrakBeispiele().boolAuswerten();
+        new L2JavaCode.L2BoolAuswerten().boolAuswerten();
     }
 }
  ```
 > [!NOTE]
-> [Klicke hier um den code in der Klasse progPrakBeispiele zu sehen](../src/progPrakBeispiele.java#L5-L14)
+> [Klicke hier um den code in der Klasse L2JavaCode.L2BoolAuswerten zu sehen](../src/L2BoolAuswerten.java)
 
 ### (7) Lösen Sie die folgenden Aufgaben im Hexadezimalsystem und wandeln Sie anschließend das Ergebnis in das Dezimalsystem um
 > a) 2F + A2 &rarr; 47 + 162 &rarr; **209**\

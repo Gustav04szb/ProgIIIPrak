@@ -20,3 +20,17 @@
 > **Logische Operatoren** vergleichen Wahrheitswerte oder führen bitweise Operationen durch (z. B. `&&`, `&`).
 ## 05–Aufgabensammlung
 ### (1)Wir haben gesehen was passiert, wenn weniger Parameter übergeben werden als das Programm sie verlangt oder erwartet
+```Java
+public class MeineEingaben { 
+    public static void main(String[] args) {
+        System.out.println("Eingabe 1: >"+args[0]+"< und");
+        System.out.println("Eingabe 2: >"+args[1]+"<");
+    }
+}
+```
+### (2)
+> [!NOTE]
+> [Hier findest du das Funktionen aus der Vorlesung ](../src/L5JavaCode/L5ArbeitenMirArgs.java) \
+> `readFileFromArgs(String[] args);` \
+> `writeToFileFromArgs(String[] args)`\
+> `printArgsToConsol(String [] args)`

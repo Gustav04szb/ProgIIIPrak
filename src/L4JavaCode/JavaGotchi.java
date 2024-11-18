@@ -1,5 +1,9 @@
+package L4JavaCode;
+
 public class JavaGotchi {
-    enum Zustand { HUNGER, VERHUNGERT, ESSEN, GLÜCKLICH }
+
+    enum Zustand {HUNGER, VERHUNGERT, ESSEN, GLÜCKLICH}
+
     private static final int HUNGER_THRESHOLD = 15;
     private static final int VERHUNGERT_THRESHOLD = 30;
     private static final double ESSEN_CHANCE = 0.15;
@@ -10,12 +14,18 @@ public class JavaGotchi {
     private int hunger = 0;
     private boolean spielLaeuft = true;
 
-    private void aktuellerZustand(){
+    public static void main(String[] args) {
+        JavaGotchi spiel = new JavaGotchi();
+        spiel.einschalten();
+    }
+
+    private void aktuellerZustand() {
         switch (zustand) {
             case HUNGER:
                 System.out.println(":/ ... hunger");
-                if (Math.random()<ESSEN_CHANCE)
+                if (Math.random() < ESSEN_CHANCE) {
                     zustand = Zustand.ESSEN;
+                }
                 break;
             case VERHUNGERT:
                 System.out.println("x(");
@@ -28,14 +38,10 @@ public class JavaGotchi {
                 break;
             case GLÜCKLICH:
                 System.out.println(":)");
+                break;
         }
     }
-    private void aktualisiereZustand() {
-        if (zustand == Zustand.HUNGER && Math.random() < ESSEN_CHANCE) {
-            zustand = Zustand.ESSEN;
-            hunger = 0; // Hunger zurücksetzen, wenn etwas Essbares gefunden wird
-        }
-    }
+
     private void steigereHunger() {
         if (zustand != Zustand.ESSEN) {
             hunger += (int) (Math.random() * HUNGER_INCREMENT_MAX);
@@ -46,21 +52,28 @@ public class JavaGotchi {
             }
         }
     }
-    private static void warten(){
+
+    private void warten() {
         try {
             Thread.sleep(LOOP_DELAY_MS);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
     }
-    public void Einschalten(){
-        while(spielLaeuft){
+
+    private void einschalten() {
+        while (spielLaeuft) {
             aktuellerZustand();
             aktualisiereZustand();
             steigereHunger();
             warten();
         }
     }
+
+    private void aktualisiereZustand() {
+        if (zustand == Zustand.HUNGER && Math.random() < ESSEN_CHANCE) {
+            zustand = Zustand.ESSEN;
+            hunger = 0; // Reset hunger when food is found
+        }
+    }
 }
-
-

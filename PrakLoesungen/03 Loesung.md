@@ -50,52 +50,59 @@ graph TB
 > b) $`f2(x) = \frac{x^2}{2}+17*2 `$ \
 > c) $`f2(x) = \frac{(x −1)^3−14)}{2}`$
 ```java
-public class Main {
+public class L3Formeln {
     public static void main(String[] args) {
-        progPrakBeispiele bsp = new progPrakBeispiele();
-        bsp.formelf1x(5); // implementiert für int & flaot 
-        bsp.formelf2x(5); // implementiert für int & flaot 
-        bsp.formelf3x(5); // implementiert für int & flaot 
+        L3JavaCode.L3Formeln formeln = new L3JavaCode.L3Formeln();
+        System.out.println(formeln.formelf1x(5)); // implementiert für int & flaot 
+        System.out.println(formeln.formelf2x(5)); // implementiert für int & flaot 
+        System.out.println(formeln.formelf3x(5)); // implementiert für int & flaot 
     }
 }
 ```
 > [!NOTE]
-> [Klicke hier um den code in der Klasse progPrakBeispiele zu sehen](../src/progPrakBeispiele.java#L17-L36)
+> [Klicke hier um den code in der Klasse L3JavaCode.L3Formeln zu sehen](../src/L3Formeln.java)
 
 ### (5) Schreiben Sie ein Programm, das für i=1,2,...,20 die Fakultätsfunktion berechnet und die Funktionswerte zeilenweise ausgibt. Die Fakultätsfunktion ist wie folgt definiert
 > $` fakultaet(n) = 1 * 2 \dots n =  \prod_{i=1}^{n} n! `$
 ```java
-public class Main {
-    public static void main(String[] args) {
-        progPrakBeispiele bsp = new progPrakBeispiele();
-        int input = 15, input2 = 20;
-        int erg = bsp.fakultaet(input);
-        System.out.println(erg);
+public class L3Fak {
+    public static int fakultaet(int input){
+        if (input < 0) {
+            throw new IllegalArgumentException("Die Zahl muss nicht negativ sein.");
+        }
+        if(input > 19){
+            throw new IllegalArgumentException("Die Zahl darf nicht größer als 19 sein.");
+        }
+        if (input == 0 || input == 1) {
+            return 1; // Basisfall: 0! und 1! sind 1
+        }
+        return input * fakultaet(input - 1);
 
-        erg = bsp.fakultaet(input2);  // Überschreitet Integer.MAX_VALUE // int - 32 Bit(4Bytes)
-        System.out.println(erg);
+    }
+
+    public static void main(String[] args) {
+        System.out.println(fakultaet(15));
     }
 }
 ```
 > [!NOTE]
-> [Klicke hier um den code in der Klasse progPrakBeispiele zu sehen](../src/progPrakBeispiele.java#L38-L50)
+> [Klicke hier um den code in der Klasse L3JavaCode.L3Fak zu sehen](../src/L3JavaCode/L3Fak.java)
 
 ### (6) Geben Sie für die folgenden Summen entsprechende for-Schleifen an:
 > a) $` \sum_{i=0}^{28}(i-1)^2 `$\
 > b) $` \sum_{i=0}^{100}\frac{i*(i+1)}{2} `$\
 > c) $` \sum_{i=1}^{25}\frac{i+1}{i} `$
 ```java
-public class Main {
+public class L3Loops {
     public static void main(String[] args) {
-        progPrakBeispiele bsp = new progPrakBeispiele();
-        System.out.println(bsp.summenForLoopA());
-        System.out.println(bsp.summenForLoopB());
-        System.out.println(bsp.summenForLoopC());
+        System.out.println(summenForLoopA());
+        System.out.println(summenForLoopB());
+        System.out.println(summenForLoopC());
     }
 }
 ```
 > [!NOTE]
-> [Klicke hier um den code in der Klasse progPrakBeispiele zu sehen](../src/progPrakBeispiele.java#L52-L72)
+> [Klicke hier um den code in der Klasse L3JavaCode.L3Loops zu sehen](../src/L3JavaCode/L3Loops.java)
 
 ### (7) Überführen Sie die folgenden Schleifen in for- bzw. while-Schleifen
 | For-Schleife                                                                   | For-Schleife2                               | While-Schleife                                                 |
@@ -103,29 +110,45 @@ public class Main {
 | for (int x=7; x<12; x++) for (int y=0; x=10; x>y; y++, x--) <br/>`<Anweisung>` | for (int x=7; x<12; x++) <br/>`<Anweisung>` | int a = 1024;<br>while (a>2) { <br/> <Anweisung> a=a/2; <br/>} |
 
 ```java
-public class Main {
+import L3JavaCode.L3ForWhile;
+
+public class L3Loops {
     public static void main(String[] args) {
-        progPrakBeispiele bsp = new progPrakBeispiele();
-        bsp.forInWhile1();
-        bsp.forInWhile2();
-        bsp.whileInFor();
+        L3JavaCode.L3ForWhile l3 = new L3JavaCode.L3ForWhile();
+        l3.forInWhile1();
+        l3.forInWhile2();
+        l3.whileInFor();
     }
 }
 ```
 > [!NOTE]
-> [Klicke hier um den code in der Klasse progPrakBeispele zu sehen](../src/progPrakBeispiele.java#L74-L92)
+> [Klicke hier um den code in der Klasse progPrakBeispele zu sehen](../src/L3JavaCode/L3ForWhile.java)
 
 ### (8) In Abschnitt 1.7.2 wurden Typumwandlungen mittels Casten vorgestellt. Überprüfen Sie, ob der größte darstellbare Wert für einen long in einen float passt (kleiner Hinweis: der größte darstellbare long ist Long.MAX_VALUE), indem Sie zunächst den Inhalt des long in den float speichern, zurückcasten und beide, den Startwert und den neuen Wert vergleichen.
 ```java
-public class Main {
+public class L3LongToFloat {
+    public static void LongToFloatCastin(){
+        long originalLong = Long.MAX_VALUE;
+        float castedFloat = (float) originalLong;
+        long backToLong = (long) castedFloat;
+
+        System.out.println("Originaler long-Wert: " + originalLong);
+        System.out.println("Nach float und zurück gecasteter long-Wert: " + backToLong);
+
+        if (originalLong == backToLong) {
+            System.out.println("Der größte darstellbare long-Wert passt in einen float.");
+        } else {
+            System.out.println("Der größte darstellbare long-Wert passt nicht in einen float (Genauigkeitsverlust).");
+        }
+    }
+
     public static void main(String[] args) {
-        progPrakBeispiele bsp = new progPrakBeispiele();
-        bsp.LongToFloatCastin();
+        LongToFloatCastin();
     }
 }
 ```
 > [!NOTE]
-> [Klicke hier um den code in der Klasse progPrakBeispiele zu sehen](../src/progPrakBeispiele.java#L94-L107)
+> [Klicke hier um den code in der Klasse progPrakBeispiele zu sehen](../src/L3JavaCode/L3LongToFloat.java)
 
 ### (9) Erklären Sie warum Integer.MIN_VALUE-1 zu einer positiven Zahl führt.
 > Der Ausdruck `Integer.MIN_VALUE - 1` führt in Java zu `Integer.MAX_VALUE`, da die Subtraktion zu einem Überlauf im Zweierkomplement führt. Da Java keinen größeren Speicherplatz für `int` reserviert, „springt“ das Ergebnis bei einem Überlauf von der kleinsten negativen zur größten positiven Zahl.
