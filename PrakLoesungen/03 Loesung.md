@@ -60,7 +60,7 @@ public class L3Formeln {
 }
 ```
 > [!NOTE]
-> [Klicke hier um den code in der Klasse L3JavaCode.L3Formeln zu sehen](../src/L3Formeln.java)
+> [Klicke hier um den code in der Klasse L3JavaCode.L3Formeln zu sehen](../src/L3JavaCode/L3Formeln.java)
 
 ### (5) Schreiben Sie ein Programm, das für i=1,2,...,20 die Fakultätsfunktion berechnet und die Funktionswerte zeilenweise ausgibt. Die Fakultätsfunktion ist wie folgt definiert
 > $` fakultaet(n) = 1 * 2 \dots n =  \prod_{i=1}^{n} n! `$
