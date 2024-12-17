@@ -1,7 +1,7 @@
 package L3JavaCode;
 
 public class L3LongToFloat {
-    public static void LongToFloatCastin(){
+    public static void LongToFloatCastin() {
         long originalLong = Long.MAX_VALUE;
         float castedFloat = (float) originalLong;
         long backToLong = (long) castedFloat;

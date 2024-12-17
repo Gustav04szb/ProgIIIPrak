@@ -1,11 +1,11 @@
 package L3JavaCode;
 
 public class L3Fak {
-    public static int fakultaet(int input){
+    public static int fakultaet(int input) {
         if (input < 0) {
             throw new IllegalArgumentException("Die Zahl muss nicht negativ sein.");
         }
-        if(input > 19){
+        if (input > 19) {
             throw new IllegalArgumentException("Die Zahl darf nicht größer als 19 sein.");
         }
         if (input == 0 || input == 1) {
