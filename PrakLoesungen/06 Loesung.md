@@ -37,13 +37,14 @@ graph TD
     c1 --> c10["3"]
 ```
 ### (2) Welche Programmzeilen erzeugen die beiden folgenden Speicherkonstellationen
-> ```JAVA
+```JAVA
 > int[][] a = new int[3][];
 > a[0] = new int[]{1};      
 > a[1] = new int[]{-1, 5};   
 > a[2] = new int[]{2, 4, 6}; 
+```
 
-> ```JAVA
+```JAVA
 > float[][] b = new float[3][];      
 > b[0] = new float[n];               // Erste Zeile mit n Elementen (n unbestimmt).
 > b[1] = new float[]{3.5f, -0.3f};   
@@ -51,7 +52,10 @@ graph TD
 ```
 
 ## 06 Aufgabensammlung
-
+### (1) Deklarieren Sie eine Liste a vom Typ int und füllen Sie die Liste mit 10 positiven Zahlen Ihrer Wahl. Verwenden Sie dabei die Literale Erzeugung.
+### (2) Deklarieren Sie eine nxm-Matrix vom Typ int. Weisen Sie jedem Eintrag der Matrix einen zufälligen Wert zwischen 4 und 10 zu. Schreiben Sie ebenfalls eine Funktion, die alle Einträge dieser Matrix in Matrixform ausgibt
+> [!NOTE]
+> [Hier findest du die umsetzung](../src/L6JavaCode/L6Arrays.java) 
 
 
 
